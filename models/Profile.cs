@@ -8,8 +8,9 @@ public class Profile
     public required string name { get; set; }
     public required string username { get; set; }
     public required string password { get; set; }
-    public Guid TuristicosID { get; set; }
-    public required Tourist Tourists { get; set; } 
+    
+    public ICollection<ProfileTrip> profileTrips { get; set; } = [];
+
     
 
 }
